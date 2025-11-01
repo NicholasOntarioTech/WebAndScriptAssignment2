@@ -127,14 +127,14 @@ input[type="submit"]{
     margin:5%;
 }
 
-aside{ /*Instead of the aside being next to the text, he aside is now above the text, to allow for more efficient use of screen space.*/
-    position:relative;
-    text-align:center;
-    margin: 12.5%;
+aside{ 
+    float:left;
+    text-align:left;
+    margin: 5%;
     margin-bottom:5%;
     margin-top:2%;
     padding: 5px;
-    width: 75%;
+    width: 30%;
     color: #393939;
 }
 img{
