@@ -1,0 +1,178 @@
+/*
+#395144 (darkest green)
+#587a5a (green)
+#8B7147 (brown)
+#EEE9CC (white)
+#393939 (black)
+*/
+
+/*For the reasons behind certain classes / div IDs, please read computer.css*/
+/*Comments in this file really only explain what changes between computer and tablet view*/
+
+body {
+    background-color: #395144;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    padding: 0px;
+    margin: 0px;
+    width:100%;
+}
+
+article{
+    color: #393939;
+    text-align: center;
+}
+
+#wrapper{
+    width: 100%; /*On a smaller screen, those side bars begin to take up a lotta space. For this reason, in tablet and phone mode, the wrapper fills the entire screen*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EEE9CC;
+    min-height: 100dvh;
+    padding-left:4%;
+    padding-right:4%;
+
+}
+
+header{
+    background-color: #395144;
+    background: -moz-linear-gradient(top, #395144  10%, #587a5a 100%); /*Different types of gradients for different browsers. This throws a warning when using the CSS checker, but this is how we were told to do it in class*/
+    background: -webkit-linear-gradient(top, #395144  10%, #587a5a 100%); 
+    background: -o-linear-gradient(top, #395144  10%, #587a5a 100%); 
+    background: linear-gradient(to bottom, #395144  10%,#587a5a 100%);
+    color: #EEE9CC;
+    padding-top: 5px;
+    height:125px;
+    text-align: center;
+}
+
+footer{
+    background-color: #395144;
+    background: -moz-linear-gradient(bottom, #395144  10%, #587a5a 100%); /*Different types of gradients for different browsers. This throws a warning when using the CSS checker, but this is how we were told to do it in class*/
+    background: -webkit-linear-gradient(bottom, #395144  10%, #587a5a 100%); 
+    background: -o-linear-gradient(bottom, #395144  10%, #587a5a 100%); 
+    background: linear-gradient(to top, #395144  10%,#587a5a 100%);
+    color: #EEE9CC;
+    padding-top: 5px;
+    bottom:0;
+    text-align: center;
+
+}
+
+h1, h2, h3, h5, h6, p, li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+h4{
+    margin-left: 15px;
+    margin-top:2px;
+}
+
+.button{
+font-size:large;
+text-decoration:none;
+background-color:#8B7147;
+display:inline-block;
+width:28dvw; /*Width of the buttons no longer static like desktop mode. Now, they scale with the width of the screen. Provides a cool effect*/
+text-align:center;
+padding:2px;
+margin:2px;
+border-radius:15px;
+color:#EEE9CC;
+}
+
+.button:hover{
+box-shadow:5px 5px 3px black;
+background: radial-gradient(ellipse at center, #8B7147 51%,#262113 100%);
+}
+
+section{
+    color:#393939;
+    text-align: center;
+}
+
+.sectionB{
+    color:#393939;
+    text-align: center;
+    margin-right: 5%;
+}
+
+textarea{ /*In desktop mode, text area and other input fields were a fixed length. This means they could get cut off on smaller screens. For this reason, the inputs in the contact me page now scale with the screen width*/
+    width:80%;
+}
+
+select{ /*Padding on input fields is increased, so that the fields are bigger and therefore easier to tap*/
+    width:80%;
+    padding:2%;
+}
+
+input{
+    width:90%;
+    padding: 1%;
+}
+
+input[type="checkbox"]{
+    width:5%;
+    padding: 1%;
+}
+
+input[type="reset"]{
+    font-size: large;
+    padding:1%;
+    margin:5%;
+}
+input[type="submit"]{
+    font-size: large;
+    padding:1%;
+    margin:5%;
+}
+
+aside{ /*Instead of the aside being next to the text, he aside is now above the text, to allow for more efficient use of screen space.*/
+    position:relative;
+    text-align:center;
+    margin: 12.5%;
+    margin-bottom:5%;
+    margin-top:2%;
+    padding: 5px;
+    width: 75%;
+    color: #393939;
+}
+img{
+    width:100%;
+}
+
+video {
+    width: 96%;
+    padding: 2%;
+    background: -moz-linear-gradient(45deg, #8B7147  0%, #4E6C50 100%); /*Apply an angular linear gradient, as per requirements*/
+    background: -webkit-linear-gradient(45deg, #8B7147  0%, #4E6C50 100%); 
+    background: -o-linear-gradient(45deg, #8B7147  0%, #4E6C50 100%); 
+    background: linear-gradient(45deg, #8B7147  0%,#4E6C50 100%);
+}
+
+#welcome{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size:500%;
+    text-align: center;
+    padding-top: 5%;
+    color:#393939;
+}
+
+#photo{
+    text-align: center; 
+    margin-left: 15%; 
+    margin-right: 15%; 
+    
+}
+
+#h3b{
+    text-align: center;
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 0.5%;
+    margin-left: 15px;
+    margin-right:15px;
+    font-weight: bold;
+}

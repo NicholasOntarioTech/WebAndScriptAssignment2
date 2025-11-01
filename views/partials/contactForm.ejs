@@ -1,0 +1,44 @@
+
+<!--This whole chunk of code was taken from Bootstrap, but heavily modified to suit my needs-->
+<form action="mailto:nicholas.skoric@ontariotechu.net?subject=WebAndScriptAssignment1-ContactForm" enctype="text/plain"
+            method="post" name="Contact Nicholas Skoric">
+<div class="row">
+  <div class="col">
+    <label for="fName" class="form-label">First Name</label>
+    <input id="fName" type="text" class="form-control" placeholder="John" aria-label="First name" required>
+  </div>
+  <div class="col">
+    <label for="lName" class="form-label">Last Name</label>
+    <input id="lName" type="text" class="form-control" placeholder="Smith" aria-label="Last name" required>
+  </div>
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<select class="form-select" aria-label="Default select example">
+  <option selected>How did you hear of me?</option>
+  <option value="1">Word of mouth</option>
+  <option value="2">Spotted on campus</option>
+  <option value="3">I must mark this project, and your name is on my list</option>
+  <option value="4">Other</option>
+</select>
+
+<br>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    I consent to regular emails from Nicholas Skoric
+  </label>
+</div>
+
+<br>
+<button type="submit" class="btn btn-primary" value="Submit">Send Message</button>
+</form>
